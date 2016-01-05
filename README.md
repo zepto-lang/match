@@ -38,6 +38,6 @@ to 34 lines). Some of the weaknesses are:
 I hope this does not put you off too much. It should be somewhat
 interesting to use anyway.
 
-<br/>
+<hr/>
 
 Have fun!
