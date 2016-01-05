@@ -68,4 +68,16 @@
     ((((1 (100 x)) 3) x)))
   "test that we bind within deeply nested structures")
 
+(minitest:assert-equal
+  2
+  (match (list [1 {100 2}] 3)
+    ((((1 {100 x}) 3) x)))
+  "test that we bind vectors within deeply nested structures")
+
+(minitest:assert-equal
+  2
+  (match (list [1 b{100 2}] 3)
+    ((((1 b{100 x}) 3) x)))
+  "test that we bind byte-vectors within deeply nested structures")
+
 ((import "minitest:results"))
