@@ -31,6 +31,7 @@ Deeply nested structures can also be matched, of course.
 The pattern matching is *really* basic (the whole module amounts
 to 34 lines). Some of the weaknesses are:
 
+- Nesting and taking doesn't really play well with data structures other than lists.
 - There are no regexes, simply because zepto does not have regexes *yet*.
 - There is no "catch-all" clause.
 
