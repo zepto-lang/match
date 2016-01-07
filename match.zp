@@ -28,7 +28,7 @@
         ((list? pattern) (if (list? to-match) (_match-single pattern to-match) :invalid))
         (else (if (eq? pattern to-match) '() :invalid)))))
   (define (_red acc x)
-    (if (null? acc)
+    (if (and (null? acc) (eq? (length (car x)) (length args)))
       (let ((matched (_match-single (car x) args)))
         (if (in? matched :invalid)
           acc
