@@ -1,0 +1,7 @@
+(define (fizzbuzz n)
+  (do ((i 1 (add1 i))) ((> i n))
+    (match (list (modulo i 5) (modulo i 3))
+      (((0 0) (write "fizzbuzz"))
+       ((_ 0) (write "fizz"))
+       ((0 _) (write "buzz"))
+       ((_ _) (write i))))))
