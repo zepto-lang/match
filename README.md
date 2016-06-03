@@ -2,6 +2,13 @@
 
 A minimal pattern matching library for zepto.
 
+## Installation
+```
+zeps install zepto-lang/match
+# if you want to test your version of match
+zeps test match
+```
+
 ## Usage
 
 For the normal user, there is but one endpoint
